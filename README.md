@@ -9,9 +9,6 @@ Create a portfolio of work samples for potential employers to review samples of 
 ```
 The following images shows a mock-up demo of the portfolio.
 
-![Alt text](Images/portfolio-demo-1.png)
-
-
 
 ```
 
