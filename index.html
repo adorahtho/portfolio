@@ -13,9 +13,9 @@
     <h1>Adorah Tho</h1>
     <nav>
       <ul>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contactme">Contact Me</a></li>
         <li><a href="#">Resume</a></li>
       </ul>
     </nav>
@@ -31,31 +31,32 @@
       <aside>
         <ul>
           <li>
-            <p>About Me</p></li>
+            <p id="aboutme">About Me</p></li>
           <li>
-            <p>Work</p></li>
+            <p id="work">Work</p></li>
           <li>
-            <p>Contact Me</p></li>
+            <p id="contactme">Contact Me</p></li>
         </ul>
       </aside>
 
       <article>
         <p class="aboutme-text">
           Hello, my name is Adorah Tho. I am a mom of two and currently work as a Prior Authorization Clerical Analyst. In my position I work through different queues reviewing prior authorizations for different types of services. Once in awhile I will hear about the system side and see things get updated or changed. That was when I first started getting curious about coding so I decided to dabble in a little HTML and CSS on Codecamy. The simple things I was learning like creating a paragraph, a list, or adding a submit button made me feel so excited because those were little things I use and see everyday while working or using my phone. It really made realize all the posibilities that there are with coding and gives me the desire to learn more.</p>
-        <p class="work">
-          <img src="./Images/surf-report.png" alt="surf report"/>
-          <img src="./Images/LED-wall.png" alt="LED wall"/>
-          <img src="./Images/calculator.png" alt="calculator"/>
-          <img src="./Images/pastel-puzzles.png" alt="pastel puzzles"/>
-          <img src="./Images/run-buddy.png" alt="run buddy"/>
-        </p>
-
-        <ul>
-          <li><a href="#">920.791.9449</a></li>
-          <li><a href="#">adorahtho@gmail.com</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
+        <section>
+          <div class="work-images">
+            <img src="./Images/surf-report.png" alt="surf report" class="card" id="card-surf"/>
+            <img src="./Images/LED-wall.png" alt="LED wall" class="card" id="left-cards"/>
+            <img src="./Images/calculator.png" alt="calculator" class="card" id="right-cards"/>
+            <img src="./Images/pastel-puzzles.png" alt="pastel puzzles" class="card" id="left-cards"/>
+            <img src="./Images/run-buddy.png"   alt="run buddy" class="card" id="right-cards/>
+          </div>
+          <ul>
+            <li><a href="#">920.791.9449</a></li>
+            <li><a href="#">adorahtho@gmail.com</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </section>
       </article>
     </section>
   </main>
