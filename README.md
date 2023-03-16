@@ -32,5 +32,6 @@ I will be updating the page with actual work once complete.
 
 ## Author & Contributors
 ```
-@thoak90codes
+UW Coding Bootcamp
+ @thoak90codes
 ```

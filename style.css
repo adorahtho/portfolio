@@ -1,8 +1,9 @@
 :root {
   --dark-blue: rgb(17, 40, 82);
   --light-blue: rgb(39, 190, 236);
+  --font-weight: bold; 
+  --text-decoration: none;
 }
-
 
 * {
   box-sizing: border-box;
@@ -11,15 +12,11 @@
 
 body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
-  display: flex;
-  flex-direction: column;
-  margin: 0;
 }
 
+/*Header with dark blue background and space between h1 element and navigation so they're on opposite sides of the page.*/
 header {
   display: flex;
-  background-size: cover;
-  background-attachment: fixed;
   background-color: var(--dark-blue);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -33,107 +30,117 @@ h1 {
   padding-top: 10px;
 }
 
+/*Navigation in header*/
+nav {
+  min-width: 500px;
+}
+
 nav ul {
   display: flex;
-  min-width: 450px;
-  list-style: none;
-  padding-top: 30px;
-  padding-right: 60px;
   justify-content: space-between;
+  height: 100%;
+  flex-wrap: wrap;
 }
 
+nav li {
+  margin: auto;
+}
+
+/*Styled navigation links*/
 nav a {
   color: var(--light-blue);
-  font-weight: bold;
-  text-decoration: none;
+  font-weight: var(--font-weight);
+  text-decoration: var(--text-decoration);
   border-bottom: solid var(--light-blue);
+  width: fit-content;
 }
 
+/*Navigation links glow when hovered over*/
 nav a:hover {
   color: white;
   text-shadow: #fc0 1px 0 10px;
 }
 
-div img {
+.container {
   position: relative;
-  text-align: center;
-  width: 100%;
-  color: var(--dark-blue);
 }
 
+.main-background {
+  height: 290px;
+}
+
+/*Selfie image is sized and positioned infront of main background*/
+.selfie-image {
+  position: absolute;
+  display: flex;
+  top: 40px;
+  right: 60px;
+  width: 203px;
+}
+
+/*Text infront or below selfie photo*/
 .background-text {
   position: absolute;
   background-color: var(--light-blue);
-  top: 260px;
+  top: 240px;
   right: 60px;
   padding: 10px 25px 10px 25px;
-  font-weight: bold;
+  font-weight: var(--font-weight);
   font-size: 20px;
+  font-style: italic;
 }
 
 section {
   display: flex;
-  flex-wrap: wrap;
 }
 
+/*Sidebar in main content area*/
 aside {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 40px;
+  font-size: 3vw;
   padding-top: 20px;
   width: fit-content;
-  height: fit-content;
-}
-
-aside ul {
-  width: fit-content;
+  height: 100%;
 }
 
 aside li {
-  list-style: none;
-  width: fit-content;
   height: 160px;
 }
 
 aside p {
-  width: 150px;
+  width: 190px;
   text-align: right;
-  margin-left: 160px;
+  margin-left: 120px;
+  color: var(--dark-blue);
 }
 
 .work-sidebar {
   height: fit-content;
 }
 
-.work-borderline {
-  height: 700px;
+.work {
+  height: 715px;
 }
 
+/*Main content next to side bar*/
 article {
   flex: 4;
   padding: 25px 50px 20px 20px;
-  height: 1200px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 
+/*About me paragraph*/
 .aboutme-text {
   font-size: 14px;
-  box-sizing: content-box;
-  width: fit-content;
-  height: fit-content;
   padding-left: 20px;
   padding-bottom: 20px;
   margin-bottom: 30px;
   border-left: solid var(--dark-blue);
-  display: flex;
-  flex-wrap: wrap;
   line-height: 1.5;
 }
 
+/*Images in work section*/
 .work-images {
-  display: flex;
   flex-wrap: wrap;
   padding-left: 20px;
   border-left: solid var(--dark-blue);
@@ -146,27 +153,37 @@ article {
   border: solid var(--light-blue);
   margin-bottom: 20px;
   display: flex;
+  opacity: .6;
+  width: 100%;
+}
+
+/*Size modifications for surf report image*/
+.surf-image {
+  width: 100%;
 }
 
 #card-surf {
   margin-bottom: 20px;
-  width: 100%;
   height: 300px;
 }
 
+/*Size modifications for LED Wall and Pastel Puzzel images*/
 .left-images {
   width: 50%;
 }
 
+/*Size modifications for Calculator and Run Buddy images*/
 .right-images {
   padding-left: 20px;
   width: 50%;
 }
 
+/*When mouse hovers over images in work section, the opacity goes from .6 to 1*/
 .card:hover {
-  opacity: .6;
+  opacity: 1;
 }
 
+/*Small image texts in front of work images*/*/
 .image-text {
   position: absolute;
   background-color: var(--light-blue);
@@ -178,73 +195,147 @@ article {
 }
 
 #surf-text {
-  bottom: 140px;
+  bottom: 110px;
 }
 
 #led-text {
-  bottom: -30px;
+  bottom: -60px;
 }
 
 #puzzles-text {
-  bottom: -200px;
+  bottom: -230px;
 }
 
 #calculator-text {
-  bottom: -30px;
+  bottom: -60px;
 }
 
 #run-text {
-  bottom: -200px;
+  bottom: -230px;
 }
 
+/*Contact me section at bottom of webpage*/
 .contactme-section {
-  height: 80px;
+  height: 150px;
   border-left: solid var(--dark-blue);
 }
 
 .contactme-ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-evenly;
   width: 100%;
+  height: 100px;
+  margin: auto;
 }
 
 .contactme-li {
-  display: inline;
   margin: auto;
-  text-decoration: none;
 }
 
-a[href^="#"]::before {
-  text-decoration: none;
+.contactme-a {
+  text-decoration: var(--text-decoration);
+  border-bottom: solid var(--dark-blue);
 }
 
+ul a:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+/*Bottom of webpage*/
+footer {
+  background-color: var(--dark-blue);
+  height: 40px;
+}
+
+footer h4 {
+  text-align: center;
+  color: var(--light-blue);
+  font-style: italic;
+}
+
+/*When screen width shrinks to 850px the following will be modified for viewer readability and spacing*/
 @media screen and (max-width: 850px) {
-  .header-text {
+  header {
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: rgb(23, 23, 105);
+    background-color: rgb(70, 45, 98);
   }
-  .card {
-    display: flex;
-    flex-wrap: wrap;
+  h1 {
+  text-align: center;
+  color: var(--dark-blue);
   }
   aside li {
     box-sizing: content-box;
     width: 100%;
-    height: 150px;
+    height: 300px;
   }
   aside p {
     box-sizing: content-box;
     width: 100%;
     height: 120px;
-    justify-content: space-between;
     padding-right: 10px;
+    margin-left: 0px;
+  }
+  .work {
+    height: 725px;
+  }
+  #surf-text {
+    bottom: 20px;
+  }
+  #led-text {
+    bottom: -150px;
+  }
+  #puzzles-text {
+    bottom: -320px;
+  }  
+  #calculator-text {
+    bottom: -150px;
+  } 
+  #run-text {
+    bottom: -320px;
+  }
+  .contactme-section {
+    height: 80px;
+  }
+  .contactme-ul {
+    height: 1;
   }
 }
 
-@media screen and (max-width: 750px) {
-  .card {
-    width: 100%;
+/*When screen shrinks to 550px the following will apply for readability and spacing*/
+@media screen and (max-width: 550px) {
+  html {
+    display: grid;
+  }
+  header {
+    background-color: rgb(102, 69, 132);
+  }
+  article {
+    height: 1500px;
+  }
+  aside li {
+    height: 400px;
+  }
+  #surf-text {
+    bottom: -130px;
+  }
+  #led-text {
+    bottom: -300px;
+  }
+  #puzzles-text {
+    bottom: -470px;
+  }  
+  #calculator-text {
+    bottom: -300px;
+  } 
+  #run-text {
+    bottom: -470px;
+  }
+  .contactme-section {
+    height: 80px;
+  }
+  .contactme-ul {
+    height: 1;
   }
 }

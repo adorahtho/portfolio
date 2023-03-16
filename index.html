@@ -2,32 +2,42 @@
 <html lang="en">
 
 <head>
-  <title>Adorah's Portfolio</title>
+  <title>Adorah's Coding Bootcamp Portfolio</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="./reset.css"/>
   <link rel="stylesheet" type="text/css" href="./style.css"/>
 </head>
-
+<!--Navigation Header-->
 <body>
   <header>
     <h1>Adorah Tho</h1>
     <nav>
       <ul>
-        <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contactme">Contact Me</a></li>
-        <li><a href="#">Resume</a></li>
+        <li>
+          <a href="#aboutme">About Me</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#contactme">Contact Me</a>
+        </li>
+        <li>
+          <a href="#">Resume</a>
+        </li>
       </ul>
     </nav>
   </header>
-
+  <!--Main contents in the body-->
   <main>
+    <!--Background with selfie image-->
     <div class="container">
-      <img src="../challenge-2/Images/main-background.png" alt="Orange and blue data analytics background."/>
+      <img src="../challenge-2/Images/main-background.png" class="main-background" alt="Orange and blue data analytics background."/>
+      <img src="./Images/Selfie.jpg" class="selfie-image" alt="Selfie"/>
       <p class="background-text">Hi, I'm Adorah!</p>
     </div>
-
+    <!--Sidebar-->
     <section>
       <aside>
         <ul>
@@ -35,58 +45,67 @@
             <p id="aboutme">About Me</p>
           </li>
           <li class="work-sidebar">
-            <p class="work-borderline" id="work">Work</p>
+            <p class="work" id="work">Work</p>
           </li>
           <li>
             <p id="contactme">Contact Me</p>
           </li>
         </ul>
       </aside>
-
+      <!--About me paragraph-->
       <article>
         <p class="aboutme-text">
-          Hello, my name is Adorah Tho. I am a mom of two and currently work as a Prior Authorization Clerical Analyst. In my position I work through different queues reviewing prior authorizations for different types of services. Once in awhile I will hear about the system side and see things get updated or changed. That was when I first started getting curious about coding so I decided to dabble in a little HTML and CSS on Codecamy. The simple things I was learning like creating a paragraph, a list, or adding a submit button made me feel so excited because those were little things I use and see everyday while working or using my phone. It really made realize all the posibilities that there are with coding and gives me the desire to learn more.
+          Hello, my name is Adorah Tho. I am a mom of two and currently work as a Prior Authorization Clerical Analyst. In my position I work through different queues reviewing prior authorizations for different types of services. Once in awhile I will hear about the system side and see things get updated or changed. That was when I first started getting curious about coding so I decided to dabble in a little HTML and CSS on Codecamy. The things I learned like creating a paragraph, a list, or simply adding a submit button made me feel excited because those were little things I use and see everyday while working or on some sort of electronic device. It  made me realize all the posibilities out there with coding and gives me the desire to learn more.
         </p>
-
-        <section>
-          <div class="work-images">
-            <img src="./Images/surf-report.png" alt="surf report" class="card" id="card-surf"/>
-              <div class="image-text" id="surf-text">
-                <h4>Surf Report</h4>
-                <p class="small-fontsize">MERN Stack</p>
-              </div>
+        <!--Work application images with placeholder-->
+        <section class="work-images">
+          <div class="surf-image">
+            <a href="#"><img src="./Images/surf-report.png" alt="surf report" class="card" id="card-surf"/></a> 
+            <div class="image-text" id="surf-text">
+              <h4>Surf Report</h4>
+              <p class="small-fontsize">MERN Stack</p>
+            </div>   
+          </div>
           <div class="left-images">
-            <img src="./Images/LED-wall.png" alt="LED wall" class="card" id="left-cards"/>
+            <a href="#"><img src="./Images/LED-wall.png" alt="LED wall" class="card" id="left-cards"/></a>
               <div class="image-text" id="led-text">
                 <h4>LED Wall</h4>
                 <p class="small-fontsize">Node/IoT</p>
               </div>
-            <img src="./Images/pastel-puzzles.png" alt="pastel puzzles" class="card"/>
+              <a href="#"><img src="./Images/pastel-puzzles.png" alt="pastel puzzles" class="card"/></a>
               <div class="image-text" id="puzzles-text">
                 <h4>Pastel Puzzles</h4>
                 <p class="small-fontsize">MERN Stack</p>
               </div>
           </div>
           <div class="right-images">
-            <img src="./Images/calculator.png" alt="calculator" class="card" id="right-cards"/>
+            <a href="#"><img src="./Images/calculator.png" alt="calculator" class="card" id="right-cards"/></a>
               <div class="image-text" id="calculator-text">
                 <h4>Calculator</h4>
                 <p class="small-fontsize">React/JavaScript/CSS</p>
               </div>
-            <img src="./Images/run-buddy.png" alt="run buddy" class="card"/>
+              <a href="#"><img src="./Images/run-buddy.png" alt="run buddy" class="card"/></a>
               <div class="image-text" id="run-text">
                 <h4>Run Buddy</h4>
                 <p class="small-fontsize">HTML/CSS</p>
               </div>
           </div>
         </section>
-      
+        <!--Contact Information-->
         <section class="contactme-section">
           <ul class="contactme-ul">
-            <li class="contactme-li"><a href="#">920.791.9449</a></li>
-            <li class="contactme-li"><a href="#">adorahtho@gmail.com</a></li>
-            <li class="contactme-li"><a href="#">GitHub</a></li>
-            <li class="contactme-li"><a href="#">Twitter</a></li>
+            <li class="contactme-li">
+              <a href="#" class="contactme-a">555.555.5555</a>
+            </li>
+            <li class="contactme-li">
+              <a href="#" class="contactme-a">myemail@email.com</a>
+            </li>
+            <li class="contactme-li">
+              <a href="#" class="contactme-a">GitHub</a>
+            </li>
+            <li class="contactme-li">
+              <a href="#" class="contactme-a">Twitter</a>
+            </li>
           </ul>
         </section>
       </article>
@@ -94,7 +113,7 @@
   </main>
 
   <footer>
-
+    <h4>Thanks for stopping by!</h4>
   </footer>
 
 </body>
