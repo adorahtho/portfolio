@@ -111,9 +111,9 @@ aside li {
 }
 
 aside p {
-  width: 190px;
+  width: 200px;
   text-align: right;
-  margin-left: 120px;
+  margin-left: 100px;
   color: var(--dark-blue);
 }
 
@@ -186,15 +186,6 @@ article {
 .card:hover {
   opacity: 1;
 }
-
-/*Small image texts in front of work images*/*/
-/*.image-text {
-  position: absolute;
-  background-color: var(--light-blue);
-  padding: 10px;
-  width: fit-content;
-}*/
-.image
 
 .small-fontsize {
   font-size: 11px;
