@@ -33,7 +33,7 @@ I will be updating the page with actual work once complete.
 
 ## Deployed Application Link
 
-
+https://thoak90codes.github.io/challenge-2/
 
 
 ## Author & Contributors
