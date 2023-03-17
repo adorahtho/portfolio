@@ -44,6 +44,7 @@ nav ul {
 
 nav li {
   margin: auto;
+  list-style: none;
 }
 
 /*Styled navigation links*/
@@ -67,6 +68,7 @@ nav a:hover {
 
 .main-background {
   height: 290px;
+  width: 100%;
 }
 
 /*Selfie image is sized and positioned infront of main background*/
@@ -103,7 +105,9 @@ aside {
 }
 
 aside li {
-  height: 160px;
+  height: fit-content;
+  list-style: none;
+  padding-bottom: 40px;
 }
 
 aside p {
@@ -114,11 +118,11 @@ aside p {
 }
 
 .work-sidebar {
-  height: fit-content;
+  height: 730px;
 }
 
 .work {
-  height: 715px;
+  height: fit-content;
 }
 
 /*Main content next to side bar*/
@@ -184,11 +188,13 @@ article {
 }
 
 /*Small image texts in front of work images*/*/
-.image-text {
+/*.image-text {
   position: absolute;
   background-color: var(--light-blue);
   padding: 10px;
-}
+  width: fit-content;
+}*/
+.image
 
 .small-fontsize {
   font-size: 11px;
@@ -196,22 +202,42 @@ article {
 
 #surf-text {
   bottom: 110px;
+  position: absolute;
+  width: fit-content;
+  background-color: var(--light-blue);
+  padding: 10px;
 }
 
 #led-text {
   bottom: -60px;
+  position: absolute;
+  width: fit-content;
+  background-color: var(--light-blue);
+  padding: 10px;
 }
 
 #puzzles-text {
   bottom: -230px;
+  position: absolute;
+  width: fit-content;
+  background-color: var(--light-blue);
+  padding: 10px;
 }
 
 #calculator-text {
   bottom: -60px;
+  position: absolute;
+  width: fit-content;
+  background-color: var(--light-blue);
+  padding: 10px;
 }
 
 #run-text {
   bottom: -230px;
+  position: absolute;
+  width: fit-content;
+  background-color: var(--light-blue);
+  padding: 10px;
 }
 
 /*Contact me section at bottom of webpage*/
@@ -226,6 +252,7 @@ article {
   width: 100%;
   height: 100px;
   margin: auto;
+  list-style: none;
 }
 
 .contactme-li {
@@ -267,18 +294,21 @@ footer h4 {
   }
   aside li {
     box-sizing: content-box;
-    width: 100%;
-    height: 300px;
+    width: var(--font-weight);
+  }
+  .work-sidebar {
+    height: fit-content;
+    padding-bottom: 80px;
   }
   aside p {
     box-sizing: content-box;
     width: 100%;
-    height: 120px;
+    height: 220px;
     padding-right: 10px;
     margin-left: 0px;
   }
   .work {
-    height: 725px;
+    height: 650px;
   }
   #surf-text {
     bottom: 20px;
@@ -315,22 +345,22 @@ footer h4 {
     height: 1500px;
   }
   aside li {
-    height: 400px;
+    height: 420px;
   }
   #surf-text {
-    bottom: -130px;
+    bottom: -200px;
   }
   #led-text {
-    bottom: -300px;
+    bottom: -380px;
   }
   #puzzles-text {
-    bottom: -470px;
+    bottom: -550px;
   }  
   #calculator-text {
-    bottom: -300px;
+    bottom: -380px;
   } 
   #run-text {
-    bottom: -470px;
+    bottom: -550px;
   }
   .contactme-section {
     height: 80px;
