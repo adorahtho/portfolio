@@ -1,4 +1,4 @@
-# challenge-2
+# portfolio
 
 ## Description
 
@@ -24,9 +24,10 @@ I will be updating the page with actual work once complete.
 
 4/20/2023 - Updated work with image and link to GigPub.
 
+
 ## Deployed Application Link
 
-https://thoak90codes.github.io/challenge-2/
+https://thoak90codes.github.io/portfolio/
 
 
 ## Author & Contributors
